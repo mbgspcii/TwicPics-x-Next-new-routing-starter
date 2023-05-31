@@ -18,6 +18,25 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## TwicPics configuration
+
+### Requirement
+
+The only requirement is to have a TwicPics account.
+If you don't already have one, you can easily [create your own TwicPics account for free](https://account.twicpics.com/signup).
+
+### Configuring `@twicpics/components`
+
+While waiting for the new version of the components, you must create a component named twicInstall.tsx as in `src/app/twicInstall.tsx`.
+
+This component is then used within `src/app/layout.tsx`
+
+### Using TwicPics
+
+As TwicPics components are `Clients Components`, they must be placed in components decorated by `use client;`.
+
+See [https://nextjs.org/docs/getting-started/react-essentials](https://nextjs.org/docs/getting-started/react-essentials).
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
